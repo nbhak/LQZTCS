@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ndE-KZ-u8f">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GujaratiSangamMN.ttc">
+            <string>GujaratiSangamMN</string>
+            <string>GujaratiSangamMN-Bold</string>
+        </array>
+        <array key="GurmukhiMN.ttc">
+            <string>GurmukhiMN</string>
+        </array>
+        <array key="NotoNastaliq.ttc">
+            <string>NotoNastaliqUrdu</string>
+        </array>
+        <array key="TrebuchetMS.ttf">
+            <string>TrebuchetMS</string>
+        </array>
+        <array key="TrebuchetMSBold.ttf">
+            <string>TrebuchetMS-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="MGK-mI-qBT">
+            <objects>
+                <viewController id="ndE-KZ-u8f" customClass="ViewController" customModule="Linquiztics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0vO-02-QnP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Linquiztics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="zey-ye-G2E">
+                                <rect key="frame" x="10" y="30" width="300" height="174"/>
+                                <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="88"/>
+                                <color key="textColor" red="0.025576007406685267" green="0.68203529792746109" blue="0.054496255986990011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGA-u0-gbY">
+                                <rect key="frame" x="87.5" y="243.5" width="145" height="144.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OGA-u0-gbY" secondAttribute="height" multiplier="1:1" id="BxI-sm-chm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="31"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="0.30707992989999999" green="7.9397555949999997e-06" blue="0.71494494819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="flipHorizontal" id="my3-ud-wv6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlU-ct-fA6">
+                                <rect key="frame" x="92.5" y="418" width="135" height="33"/>
+                                <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="15"/>
+                                <state key="normal" title="INSTRUCTIONS"/>
+                                <connections>
+                                    <segue destination="jYs-4o-Agc" kind="presentation" modalTransitionStyle="flipHorizontal" id="aFZ-jZ-vMI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIGH SCORE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynp-5z-2PV">
+                                <rect key="frame" x="93" y="208.5" width="134" height="30"/>
+                                <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.13822880734989748" blue="0.47611722797927458" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58363103143851247" green="0.85178502188682148" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zey-ye-G2E" firstAttribute="top" secondItem="UTe-IK-1Xa" secondAttribute="top" constant="10" id="9sf-FK-QRu"/>
+                            <constraint firstItem="OGA-u0-gbY" firstAttribute="leading" secondItem="UTe-IK-1Xa" secondAttribute="leading" constant="87.5" id="CSJ-CP-guN"/>
+                            <constraint firstItem="ynp-5z-2PV" firstAttribute="centerX" secondItem="UTe-IK-1Xa" secondAttribute="centerX" id="Fgv-MN-tnw"/>
+                            <constraint firstItem="OGA-u0-gbY" firstAttribute="top" secondItem="UTe-IK-1Xa" secondAttribute="top" constant="223.5" id="RuO-4g-fU1"/>
+                            <constraint firstItem="zey-ye-G2E" firstAttribute="leading" secondItem="UTe-IK-1Xa" secondAttribute="leading" constant="10" id="Y9F-86-Ajb"/>
+                            <constraint firstItem="RlU-ct-fA6" firstAttribute="top" secondItem="OGA-u0-gbY" secondAttribute="bottom" constant="30" id="eoP-Tg-hsD"/>
+                            <constraint firstItem="OGA-u0-gbY" firstAttribute="top" secondItem="zey-ye-G2E" secondAttribute="bottom" constant="40" id="g79-CX-O0q"/>
+                            <constraint firstItem="UTe-IK-1Xa" firstAttribute="trailing" secondItem="OGA-u0-gbY" secondAttribute="trailing" constant="87.5" id="jvv-qh-7hK"/>
+                            <constraint firstItem="OGA-u0-gbY" firstAttribute="top" secondItem="ynp-5z-2PV" secondAttribute="bottom" constant="5" id="t54-Ic-07d"/>
+                            <constraint firstItem="RlU-ct-fA6" firstAttribute="centerX" secondItem="UTe-IK-1Xa" secondAttribute="centerX" id="v7E-g4-Omb"/>
+                            <constraint firstItem="UTe-IK-1Xa" firstAttribute="trailing" secondItem="zey-ye-G2E" secondAttribute="trailing" constant="10" id="yxA-7u-e7C"/>
+                            <constraint firstItem="ynp-5z-2PV" firstAttribute="top" secondItem="zey-ye-G2E" secondAttribute="bottom" constant="5" id="ziQ-5p-0sJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UTe-IK-1Xa"/>
+                    </view>
+                    <connections>
+                        <outlet property="highScoreLabel" destination="ynp-5z-2PV" id="TII-nZ-vKf"/>
+                        <outlet property="startButton" destination="OGA-u0-gbY" id="4fy-7c-HMk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3YX-9c-p71" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-997.5" y="10"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="f3V-gm-iQy">
+            <objects>
+                <viewController id="jYs-4o-Agc" customClass="ViewController3" customModule="Linquiztics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Len-bs-aal">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INSTRUCTIONS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPh-Gc-BE9">
+                                <rect key="frame" x="0.0" y="20" width="320" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bYM-Ch-6Mw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="22"/>
+                                <color key="textColor" red="0.0065717067139999998" green="0.14612597320000001" blue="0.70340835489999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.30707992989999999" green="7.9397555949999997e-06" blue="0.71494494819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="S5N-2t-WZO">
+                                <rect key="frame" x="20" y="80" width="280" height="328"/>
+                                <string key="text">Welcome to Linquiztics.
+Here's some things you should know:
+
+You'll be given some puzzles, where you'll have to translate from a special code language into English and also the other way around.
+
+You can look at clues by tapping on the clues button. 
+
+Remember to take your time. You'll get a point for choosing the right answer, but you'll lose one if you pick the wrong one.</string>
+                                <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="19"/>
+                                <color key="textColor" red="0.0090925933759999997" green="0.029943397359999999" blue="0.47688633419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqQ-uT-UZW">
+                                <rect key="frame" x="133" y="483" width="54" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="0.18286227222524776" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Mdz-zd-aLK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="17"/>
+                                <state key="normal" title=" Back ">
+                                    <color key="titleColor" red="0.97342139160308794" green="1" blue="0.97797995582051545" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ndE-KZ-u8f" kind="presentation" modalTransitionStyle="flipHorizontal" id="dDg-nI-KrE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.8937419041450777" blue="0.76540580725242924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kqQ-uT-UZW" firstAttribute="top" secondItem="S5N-2t-WZO" secondAttribute="bottom" constant="75" id="6rS-IE-qij"/>
+                            <constraint firstAttribute="trailing" secondItem="S5N-2t-WZO" secondAttribute="trailing" constant="20" id="9Z3-RZ-vbm"/>
+                            <constraint firstItem="E7l-17-rfB" firstAttribute="bottom" secondItem="kqQ-uT-UZW" secondAttribute="bottom" constant="50" id="I4j-HL-PwF"/>
+                            <constraint firstItem="JPh-Gc-BE9" firstAttribute="top" secondItem="E7l-17-rfB" secondAttribute="top" id="Jcc-eE-pMz"/>
+                            <constraint firstItem="S5N-2t-WZO" firstAttribute="leading" secondItem="E7l-17-rfB" secondAttribute="leading" constant="20" id="JzE-DW-MFh"/>
+                            <constraint firstItem="kqQ-uT-UZW" firstAttribute="centerX" secondItem="S5N-2t-WZO" secondAttribute="centerX" id="VeF-HB-hUZ"/>
+                            <constraint firstItem="S5N-2t-WZO" firstAttribute="top" secondItem="JPh-Gc-BE9" secondAttribute="bottom" constant="30" id="bFt-m7-KT4"/>
+                            <constraint firstItem="JPh-Gc-BE9" firstAttribute="leading" secondItem="E7l-17-rfB" secondAttribute="leading" id="gLa-Hb-ktf"/>
+                            <constraint firstItem="E7l-17-rfB" firstAttribute="trailing" secondItem="JPh-Gc-BE9" secondAttribute="trailing" id="jJH-sd-Tzd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="E7l-17-rfB"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="kqQ-uT-UZW" id="UiB-9X-0Vg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dLQ-Pt-58B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-291" y="-800"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController2" customModule="Linquiztics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="evy-Ch-hQC">
+                                <rect key="frame" x="0.0" y="320" width="375" height="347"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rD-Fu-BHF">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="115.5"/>
+                                        <color key="backgroundColor" red="0.0" green="0.86430646010094425" blue="0.88113261010362698" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
+                                        <state key="normal" title="Answer 1">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="aSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LBO-Ut-z7K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2u-cR-RvO">
+                                        <rect key="frame" x="0.0" y="115.5" width="375" height="116"/>
+                                        <color key="backgroundColor" red="0.0" green="0.59047224870000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
+                                        <state key="normal" title="Answer 2">
+                                            <color key="titleColor" red="0.013220573655378237" green="0.043537511681378219" blue="0.69338973445595853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="aSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yHF-cJ-r7U"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHM-Gn-Re5">
+                                        <rect key="frame" x="0.0" y="231.5" width="375" height="115.5"/>
+                                        <color key="backgroundColor" red="0.0" green="0.074653594769999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
+                                        <state key="normal" title="Answer 3">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="aSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jg2-VS-nm1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="NHM-Gn-Re5" firstAttribute="height" secondItem="R2u-cR-RvO" secondAttribute="height" id="6yN-3K-TeF"/>
+                                    <constraint firstItem="5rD-Fu-BHF" firstAttribute="height" secondItem="R2u-cR-RvO" secondAttribute="height" id="IPB-ri-dHI"/>
+                                    <constraint firstItem="NHM-Gn-Re5" firstAttribute="width" secondItem="R2u-cR-RvO" secondAttribute="width" id="JG5-s9-hLN"/>
+                                    <constraint firstItem="5rD-Fu-BHF" firstAttribute="width" secondItem="R2u-cR-RvO" secondAttribute="width" id="wCe-bK-9OO"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIV-UC-QCL">
+                                <rect key="frame" x="120" y="190" width="135" height="100"/>
+                                <color key="backgroundColor" red="0.30707992991207256" green="7.9397555947842909e-06" blue="0.71494494818652843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mIV-UC-QCL" secondAttribute="height" multiplier="27:20" id="HTE-Gz-zjk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
+                                <state key="normal" title="CLUES">
+                                    <color key="titleColor" red="0.63076480006162039" green="0.97681879934313753" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showClues:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yva-RX-5S2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUESTION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Xw-TE-wz0">
+                                <rect key="frame" x="0.0" y="70" width="375" height="100"/>
+                                <fontDescription key="fontDescription" name="NotoNastaliqUrdu" family="Noto Nastaliq Urdu" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gjg-cM-F3O">
+                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owH-bV-P6C">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
+                                        <color key="backgroundColor" red="0.0066729956989054111" green="0.021975266411582126" blue="0.34998380829015541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="17"/>
+                                        <state key="normal" title="QUIT"/>
+                                        <connections>
+                                            <action selector="quit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="urX-Iz-mUc"/>
+                                            <segue destination="ndE-KZ-u8f" kind="presentation" modalTransitionStyle="flipHorizontal" id="2XN-89-Zow"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1C-On-YLd">
+                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="17"/>
+                                        <color key="textColor" red="0.0066729956990000004" green="0.021975266409999999" blue="0.34998380829999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="j1C-On-YLd" firstAttribute="width" secondItem="owH-bV-P6C" secondAttribute="width" id="aL1-75-RA8"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kl-3a-TLk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" red="0.58363103140000006" green="0.85178502190000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.58363103140000006" green="0.85178502190000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83714527523908588" green="0.85759731785224791" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="evy-Ch-hQC" secondAttribute="trailing" id="0ws-TY-TRd"/>
+                            <constraint firstItem="mIV-UC-QCL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="9yV-VY-7bc"/>
+                            <constraint firstItem="gjg-cM-F3O" firstAttribute="top" secondItem="2kl-3a-TLk" secondAttribute="bottom" id="ANJ-Jx-Uk7"/>
+                            <constraint firstItem="2kl-3a-TLk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IaX-Uj-P4m"/>
+                            <constraint firstItem="1Xw-TE-wz0" firstAttribute="top" secondItem="gjg-cM-F3O" secondAttribute="bottom" id="IhL-vC-vre"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gjg-cM-F3O" secondAttribute="trailing" id="IpZ-jo-4Dq"/>
+                            <constraint firstItem="mIV-UC-QCL" firstAttribute="top" secondItem="1Xw-TE-wz0" secondAttribute="bottom" constant="20" id="JBC-T7-eHz"/>
+                            <constraint firstItem="evy-Ch-hQC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="KbE-o4-C8P"/>
+                            <constraint firstItem="evy-Ch-hQC" firstAttribute="top" secondItem="mIV-UC-QCL" secondAttribute="bottom" constant="30" id="Mlc-Ux-eI0"/>
+                            <constraint firstItem="gjg-cM-F3O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MoY-2M-1qG"/>
+                            <constraint firstAttribute="trailing" secondItem="2kl-3a-TLk" secondAttribute="trailing" id="SDx-O7-UBn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Xw-TE-wz0" secondAttribute="trailing" id="Snt-ad-zVr"/>
+                            <constraint firstItem="2kl-3a-TLk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hIw-Ku-QZU"/>
+                            <constraint firstItem="evy-Ch-hQC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kWi-AQ-qDY"/>
+                            <constraint firstItem="1Xw-TE-wz0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="q9F-v2-TMt"/>
+                            <constraint firstItem="1Xw-TE-wz0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="skX-aS-BV1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mIV-UC-QCL" secondAttribute="trailing" constant="120" id="th5-ep-4WO"/>
+                            <constraint firstItem="gjg-cM-F3O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wgu-lt-6Ie"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="evy-Ch-hQC" secondAttribute="bottom" id="x7g-oL-OkF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="a1" destination="5rD-Fu-BHF" id="4Ts-Sp-5I7"/>
+                        <outlet property="a2" destination="R2u-cR-RvO" id="c0a-gW-n7k"/>
+                        <outlet property="a3" destination="NHM-Gn-Re5" id="XYp-t4-KFk"/>
+                        <outlet property="clueButton" destination="mIV-UC-QCL" id="gFZ-Uo-6hX"/>
+                        <outlet property="questionLabel" destination="1Xw-TE-wz0" id="jmm-yz-yqz"/>
+                        <outlet property="scoreLabel" destination="j1C-On-YLd" id="fi8-Gg-sLk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-164" y="9"/>
+        </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="i5u-uI-ApM">
+            <objects>
+                <viewController storyboardIdentifier="sbPopUpID" id="Zho-HU-3V0" customClass="PopUpViewController" customModule="Linquiztics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rOc-pR-Dz2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAz-Id-g4t">
+                                <rect key="frame" x="0.0" y="190" width="375" height="477"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdq-IP-1gi">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                        <color key="backgroundColor" red="0.0090925933759894353" green="0.029943397362346642" blue="0.47688633419689119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="AWq-1q-vAb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="17"/>
+                                        <state key="normal" title="Close">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="HideClues:" destination="Zho-HU-3V0" eventType="touchUpInside" id="D46-LK-2wa"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zRe-jQ-biz">
+                                        <rect key="frame" x="8" y="30" width="367" height="447"/>
+                                        <string key="text">WORDS:
+
+Word 1 = X
+Word 2 = Y
+Word 3 = Z
+
+GRAMMAR RULES:
+
+Rule 1
+Rule 2
+Rule 3</string>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="60"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.01322057366" green="0.043537511680000002" blue="0.69338973449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="zRe-jQ-biz" firstAttribute="leading" secondItem="bAz-Id-g4t" secondAttribute="leading" constant="8" id="1px-9n-ijw"/>
+                                    <constraint firstItem="wdq-IP-1gi" firstAttribute="leading" secondItem="bAz-Id-g4t" secondAttribute="leading" id="bOq-Fu-vld"/>
+                                    <constraint firstItem="zRe-jQ-biz" firstAttribute="top" secondItem="wdq-IP-1gi" secondAttribute="bottom" id="dTE-Qm-x0V" userLabel="WORDS:  Word 1 = X Word 2 = Y Word 3 = Z  GRAMMAR RULES:  Rule 1 Rule 2 Rule 3.top = Close.bottom"/>
+                                    <constraint firstAttribute="bottom" secondItem="zRe-jQ-biz" secondAttribute="bottom" id="fEk-8V-7Pz"/>
+                                    <constraint firstItem="wdq-IP-1gi" firstAttribute="top" secondItem="bAz-Id-g4t" secondAttribute="top" id="iBu-Fs-duW"/>
+                                    <constraint firstAttribute="trailing" secondItem="zRe-jQ-biz" secondAttribute="trailing" id="noD-03-azv"/>
+                                    <constraint firstAttribute="trailing" secondItem="wdq-IP-1gi" secondAttribute="trailing" id="r17-YL-QQb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ywm-tS-peP" firstAttribute="bottom" secondItem="bAz-Id-g4t" secondAttribute="bottom" id="CrY-pR-98G"/>
+                            <constraint firstItem="bAz-Id-g4t" firstAttribute="top" secondItem="Ywm-tS-peP" secondAttribute="top" constant="170" id="Tja-lM-91G"/>
+                            <constraint firstItem="bAz-Id-g4t" firstAttribute="leading" secondItem="Ywm-tS-peP" secondAttribute="leading" id="eSX-s3-auw"/>
+                            <constraint firstItem="Ywm-tS-peP" firstAttribute="trailing" secondItem="bAz-Id-g4t" secondAttribute="trailing" id="xev-4j-v0d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ywm-tS-peP"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="clueLabel" destination="zRe-jQ-biz" id="t8y-m5-28d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oan-ez-T62" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="606" y="10"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2XN-89-Zow"/>
+    </inferredMetricsTieBreakers>
+</document>
